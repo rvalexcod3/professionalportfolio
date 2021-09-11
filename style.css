@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+head {
+    display: none;
+}
+body {
+    background-color: rgba(226, 217, 235, 0.548);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+    
+    background-color: rgb(47, 54, 54);
+    background-size: 100%;
+    display: flex;
+    padding-bottom: 0px;
+    position: sticky;
+    top: 0px;
+    background-position: center center;
+    
+}
+header h2 {
+    color: rgb(193, 247, 215);
+    text-align: left;
+}
+h1 {
+    margin: 10px 0px 10px 0px;
+    color: rgb(193, 247, 215);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* added flexbox to nav */
+header nav ul {
+    color: rgb(193, 247, 215);
+    margin: 7px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+      }
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+nav {
+    display: flex;
+
+}
+.nav-list {
+    margin: 15px 0px 10px 0px;
+    display: flex;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hero {
+    height: 250px;
+    width: 100%;
+    background-image: url(/assets/images/code.png);
+    background-size: cover;
+    background-position: center;
+}
+.hero-text {
+    position: right;
+    top: 8px;
+    bottom: 16px;
+    color: rgb(193, 247, 215);
+}
+h2 {
+    margin: 10px 0px 10px 0px;
+    float: right;
+}
+.primary-border {
+    border-color: rgb(97, 173, 182);
+}
+.secondary-border {
+    border-color: rgb(97, 173, 182);
+}
+.section-title {
+    padding-bottom: 20px;
+    padding-right: 10px;
+    text-align: left;
+    margin: 30px auto 35px auto;
+    font-size: 40px;
+    border-right: 4px solid;
+    position: absolute;
+    border-color: rgb(97, 173, 182);
+}
+.section {
+    display: flex;
+}
+.img {
+    height: 100%;
+    width: fit-content;
+    border: 1px solid rgb(97, 173, 182);
+    opacity: 0.7;
+}
+.img:hover {
+    opacity: 1.0;
+}
+.bio {
+    line-height: 1.2;
+    text-align: right;
+    color: black;
+    width: 70%;
+    font-size: 15px;
+    margin: 0 auto;
+}
+.flexcontainer {
+    margin: 20px;
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 auto;
+    object-fit: fill;
+}
+.row {
+    width:50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.work-01{
+    color: white;
+    position: absolute;
+    flex: 3;
+    max-width: 800px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    display: inline-flexbox;
+}
+.work-02{
+    color: white;
+    position: relative;
+    flex: 2;
+    max-width: 300px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+.work-03{
+    color: white;
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+.work-04{
+    color: white;
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+.work-05{
+    color: white;
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+.centered {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.mycontact {
+    line-height: 1.7;
+    text-align: right;
+    color: black;
+    width: 80%;
+    font-size: 15px;
+    margin: 0 auto;
+}
+.p {
+    display: inline-block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: 80%;
+    height: 150px;
+    text-align: center;
+}
+.contact p{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    .work-01{
+        flex: 100%;
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 575px) {
+
+}
