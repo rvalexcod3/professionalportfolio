@@ -18,7 +18,11 @@ header {
   padding-bottom: 0px;
   top: 0px;
   background-position: center center;
+  justify-content: space-between;
 }
+/* .topnav .navlist {
+  justify-content: ;
+} */
 header h2 {
   color: rgb(193, 247, 215);
   text-align: left;
@@ -28,17 +32,20 @@ h1 {
   color: rgb(193, 247, 215);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/* header nav ul li a {
-  margin: 0 30px;
-  font-weight: lighter;
-  font-size: 1.55vw;
-} */
-.nav-list {
-  margin: 15px 0px 10px 0px;
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+} 
+.topnav a {
+  margin: 15px 0px;
+  color: rgb(193, 247, 215);
   display: flex;
   list-style: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.topnav-right {
+    padding: 20px 5px;
 }
 .hero {
   height: 250px;
@@ -67,7 +74,7 @@ h2 {
   padding-bottom: 20px;
   padding-right: 10px;
   text-align: left;
-  margin: 30px auto 35px auto;
+  margin: 35px auto 35px auto;
   font-size: 40px;
   border-right: 4px solid;
   position: absolute;
@@ -111,6 +118,15 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
+.flexcontainer-2 {
+   justify-content: space-around;
+}
+.row-1 {
+    display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 .row1 {
   display: flex;
   justify-content: center;
@@ -122,7 +138,6 @@ h2 {
   max-width: 800px;
   height: 300px;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
   overflow: hidden;
 }
 .work-02 {
@@ -163,19 +178,23 @@ h2 {
   text-decoration: underline;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-  header {
-    padding-bottom: 0;
-    justify-content: center;
+ header {
+     padding-bottom: 0;
+     justify-content: center;
   }
-  .work-01 {
-    flex: 100%;
-    max-width: 600px;
+  header h1 {
+      width: 100%;
+      text-align: center;
   }
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 575px) {
-}
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+  
+    }
