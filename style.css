@@ -28,11 +28,11 @@ h1 {
   color: rgb(193, 247, 215);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-header nav ul li a {
+/* header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
   font-size: 1.55vw;
-}
+} */
 .nav-list {
   margin: 15px 0px 10px 0px;
   display: flex;
@@ -92,9 +92,7 @@ h2 {
 .work-05 {
   border: 5px soplid rgb(193, 247, 215);
 }
-.work-01 img:hover {
-  opacity: 1;
-}
+
 .bio {
   line-height: 1.2;
   text-align: right;
@@ -121,20 +119,14 @@ h2 {
 }
 .work-01 {
   color: white;
-  /* position: absolute; */
-  /* flex: 3; */
   max-width: 800px;
   height: 300px;
-  margin: 10px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
   overflow: hidden;
-  /* display: inline-flexbox; */
 }
 .work-02 {
   color: white;
-  /* position: relative;
-  flex: 2; */
   max-width: 300px;
   height: 100px;
   margin: 10px;
@@ -148,11 +140,7 @@ h2 {
 .work-02 img {
   width: 100%;
 }
-.centered {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
+
 .mycontact {
   line-height: 1.2;
   text-align: center;
