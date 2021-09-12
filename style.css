@@ -20,9 +20,6 @@ header {
   background-position: center center;
   justify-content: space-between;
 }
-/* .topnav .navlist {
-  justify-content: ;
-} */
 header h2 {
   color: rgb(193, 247, 215);
   text-align: left;
@@ -87,17 +84,32 @@ h2 {
 .work-01 {
   border: 5px solid rgb(193, 247, 215);
 }
+.work-01:hover {
+    opacity: 0.6;
+}
 .work-02 {
   border: 5px solid rgb(193, 247, 215);
+}
+.work-02:hover{
+    opacity: 0.6;
 }
 .work-03 {
   border: 5px solid rgb(193, 247, 215);
 }
+.work-03:hover {
+    opacity: 0.6;
+}
 .work-04 {
   border: 5px solid rgb(193, 247, 215);
 }
+.work-04:hover {
+    opacity: 0.6;
+}
 .work-05 {
   border: 5px soplid rgb(193, 247, 215);
+}
+.work-05:hover {
+    opacity: 0.6;
 }
 
 .bio {
@@ -197,4 +209,4 @@ h2 {
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
   
-    }
+  }
