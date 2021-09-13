@@ -65,6 +65,7 @@ h2 {
 .secondary-border {
   border-color: rgb(97, 173, 182);
 }
+/* Couldn't figure out how to increase the length of the border without things looking totally off */
 .section-title {
   padding-bottom: 20px;
   padding-right: 10px;
@@ -78,7 +79,7 @@ h2 {
 .section {
   display: flex;
 }
-/* Added hover to all images */
+/* Added hover/borders to all images */
 .work-01 {
   border: 5px solid rgb(193, 247, 215);
 }
@@ -118,6 +119,8 @@ h2 {
   font-size: 15px;
   margin: 0 auto;
 }
+/* Flexbox section, took a LOT of experimenting
+ and still isn't perfect but it's close */
 .flexcontainer {
   margin: 20px;
   display: flex;
@@ -169,6 +172,9 @@ h2 {
 .work-01 img {
   width: 120%;
 }
+/* Gave 4 of the 5 images a seperate class of work-02 
+so they wouldn't inherit the 
+styles of work-01/the first image (consolidated)*/
 .work-02 img {
   width: 100%;
 }
@@ -194,6 +200,10 @@ h2 {
 .contact p {
   text-decoration: underline;
 }
+/* Did what I could with media queries 
+but honestly I'm not sure if it's helped or not because when I
+resize the browser I don't really see differences, 
+need to work on this, but I tried. */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -219,17 +229,33 @@ h2 {
   }
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
-    header h1 {
-      font-size: 80%;
-    }
-    
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
   }
   
+    header div nav {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-  header h1 {
-    font-size: 100px;
+    header {
+      padding-bottom: 0;
+      justify-content: center;
   }
+
   header h1 {
     width: 100%;
     text-align: center;
@@ -245,29 +271,3 @@ h2 {
     text-align: center;
     width: 100%;
   }
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
-    header h1 {
-      font-size: 80%;
-    }
-    header h1 {
-      width: 100%;
-      text-align: center;
-    }
-  
-    header div nav {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-    }
-  
-    footer h2, footer div {
-      text-align: center;
-      width: 100%;
-    }
-    /* MEDIA QUERY FOR TABLETS AND SMALLER */
-    @media screen and (max-width: 768px) {
-      header h1 {
-        font-size: 80%;
-      }  
-}
